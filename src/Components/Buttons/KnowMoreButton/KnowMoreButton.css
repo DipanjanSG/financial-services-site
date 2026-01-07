@@ -1,0 +1,41 @@
+.know-more-container
+{
+
+    margin: 8% 0%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    /* transform: translateX(-50%); */
+    text-align: center;
+
+} 
+
+
+.know-more-arrow
+{
+
+    color: var(--app-bg-color);
+    height: 3vw;
+    text-align: center;
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    background-color: var(--app-heading-color-primary);
+    color: var(--app-bg-color-dark);
+    width: 45%;
+    border-radius: 3px;
+
+}
+
+
+.know-more-arrow:hover
+{
+
+    background : var(--app-bg-color-dark);
+    color: var(--app-heading-color-primary);
+    cursor: pointer;
+    
+}

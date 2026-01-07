@@ -1,0 +1,41 @@
+.single-horizontal-section-with-pic 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    /* background-image: url("../../assets/background.png"); */
+    color: white;
+    margin-top: 20vh 0;
+    padding: 5vh;
+    max-width: 100vw;
+    overflow: hidden;
+    min-height: 70vh;
+    max-height: 70vh;
+    max-height: 60vh; /* NEW: restrict container height */
+}
+
+.quotes
+{
+    font-size: 30vh;
+    color: var(--app-heading-color-primary);
+
+}
+
+.single-horizontal-section-with-pic > *
+{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 1 50%; */
+
+}
+
+.single-horizontal-section-with-pic img {
+    max-height: 60vh;
+    width: auto;
+    height: 100%;      /* NEW: ensures it scales down */
+    flex-shrink: 1;    /* NEW: allows shrinking inside flex row */
+    object-fit: contain; /* BETTER than cover for non-cropped fit */
+    border-radius: 0 30vh 0 30vh;
+}

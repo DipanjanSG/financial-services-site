@@ -1,0 +1,32 @@
+
+.not-available-text
+{
+    color: var(--app-bg-color);
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    margin: 1.5vh;
+    line-height: 120%;
+}
+
+
+.quotes-in-article-left
+{
+    font-size: 300%;
+    color: var(--app-heading-color-primary);
+    margin:3% 0;
+    text-align: left;
+    padding-left: 20%
+
+}
+
+
+.quotes-in-article-right
+{
+    font-size: 300%;
+    color: var(--app-heading-color-primary);
+    margin:3% 0;
+    text-align: right;
+     padding-right: 20%
+
+}

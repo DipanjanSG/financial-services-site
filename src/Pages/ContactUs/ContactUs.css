@@ -1,0 +1,10 @@
+.quick-contact
+{
+    color: var(--app-bg-color);
+    text-align: center;
+    font-size: 5.5vh;
+    color: white;
+    margin: .1vh;
+    margin-top: 8vh;
+
+}

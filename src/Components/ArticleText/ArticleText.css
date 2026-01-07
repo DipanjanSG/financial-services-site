@@ -1,0 +1,17 @@
+.article-main-text
+{
+
+ 
+    max-width: 85%;
+    color: var(--app-font-color-white);
+    margin: 10% auto;
+    font-size: 150%;
+}
+
+
+.article-main-text img
+{
+
+   border-right: var(--app-bg-color-secondary) 6px solid;
+   padding : 5%;
+}

@@ -1,0 +1,53 @@
+hr
+{
+    margin: 1.5vh;
+}
+
+
+.hour-glass{
+
+    width: 10vw;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10vh auto;
+    animation : rotating-hour-glass 4s linear infinite;
+}
+
+@keyframes rotating-hour-glass
+{
+    from{
+        transform : rotate(0deg);
+    }
+
+    to {
+        
+        transform : rotate(360deg);
+    } 
+
+}
+
+.about-us-heading
+{
+    color: var(--app-bg-color);
+    text-align: left;
+    font-size: 10.5vh;
+    color: white;
+    margin: 1.5vh;
+    margin-bottom: 10vh;
+    min-width: 50%;
+    max-width: 50%;
+
+}
+
+.not-available-text
+{
+    color: var(--app-bg-color);
+    text-align: center;
+    font-size: 10.5vh;
+    color: white;
+    margin: 1.5vh;
+    margin-bottom: 10vh;
+
+}

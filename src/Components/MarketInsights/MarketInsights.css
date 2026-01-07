@@ -1,0 +1,95 @@
+
+#mahasamvit-edu-course-syllabus
+{
+    background-color:black;
+    color:#FFF;
+    padding: 5vh;
+    /* font-size: 10vh; */
+
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    min-height:50%;
+    max-height: 50%;
+
+    h1{
+         padding-left:3vh;
+
+    }
+
+
+}
+
+
+.course-syllabus-modules
+{
+    display:flex;
+    flex-direction: row;
+    /* align-items:center; */
+       
+}
+
+.course-syllabus-modules > :first-child
+{
+    flex: 0 0 40vw;
+    padding-left:3vh;
+}
+
+
+/* .course-syllabus-modules section h3
+{
+    width: 40vw;
+    padding-left:3vh;
+} */
+
+#mahasamvit-edu-course-syllabus section ul{
+
+    color:#FFF;
+    list-style-type: none; /* Removes bullets */
+}
+/* 
+#mahasamvit-edu-course-syllabus section li{
+
+    margin: 1vh 0;
+} */
+
+
+
+
+
+#mahasamvit-edu-course-syllabus-action #text
+{
+    width: 60vw;
+
+    border-right: 5px solid white;
+    justify-content: center;
+}
+
+
+.insights-article-big-image
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    max-width: 50%;
+
+    min-height: 50%;
+    max-height: 50%;
+
+
+}
+
+.insights-article-image-list
+{
+ min-width: 40%;
+
+}
+
+
+.insights-article-image
+{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+
+}

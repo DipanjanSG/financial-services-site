@@ -1,0 +1,63 @@
+.triple-cards
+{
+    margin: 2% 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    height: 40vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+
+.single-card{
+    background-color: aliceblue;
+    color: black;
+    font-size: 100%;
+    height:95%;
+    aspect-ratio : 1 / 1;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;   
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction : row;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px 30px 30px 30px;
+}
+
+ .single-card img 
+{
+
+  height:100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position : top left;
+} 
+
+.single-card::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  pointer-events: none; 
+}
+
+.link-to-courses
+{
+    position: absolute;
+    word-break: break-word;
+    color : white;
+    z-index: 1;
+    cursor: pointer;
+}
+

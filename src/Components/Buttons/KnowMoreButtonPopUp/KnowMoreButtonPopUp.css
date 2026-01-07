@@ -1,0 +1,38 @@
+.know-more-container
+{
+
+    margin: 5% 0%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+
+} 
+
+
+.know-more-arrow-pop-up
+{
+
+    background : var(--app-bg-color);
+    color: #dcdcdc;
+    width:3vw;
+    height: 3vw;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.4s ease;
+    display: flex;
+    
+    justify-content: center;
+    align-items : center;
+}
+
+
+.know-more-arrow-pop-up:hover
+{
+
+    background : #dcdcdc;
+    color: var(--app-bg-color);
+    cursor: pointer;
+    
+}

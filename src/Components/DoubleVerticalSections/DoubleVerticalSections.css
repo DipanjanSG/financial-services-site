@@ -1,0 +1,6 @@
+.double-vertical-section
+{
+    display:flex;
+    gap : 5%;
+    justify-content: content;;
+}

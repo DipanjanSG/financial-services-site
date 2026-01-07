@@ -1,0 +1,72 @@
+.ms-financial-edu-website-header{
+
+    background-color: var(--app-bg-color-secondary);
+    color: var(--app-font-color-black);
+    z-index: 2;
+    height: 10vh;
+    /* position: fixed; */
+    bottom: 0;
+
+   
+}
+
+
+.header-flex
+{
+    display : flex;
+    flex-direction : row;
+    /* flex-wrap: wrap; */
+    gap: 1vw;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 60%;
+    padding: 0 0;
+        
+
+
+}
+
+.header-flex > * {
+
+  flex: 1 1 13%;
+    /* flex: */
+  /* flex: 0 0 15%;
+  max-height: 90%; */
+  /* margin: 2.5%; */
+  text-align: center;
+  font-weight: 400;
+
+}
+
+
+/* ul { */
+  /* list-style-type: none;   */
+  /* margin : 0 0;
+  padding : 0 0;
+  color: #8996A0
+} */
+
+
+/* span{
+
+color : #8996A0;
+
+} */
+
+span a img{
+  margin : 0;
+  padding : 0;
+}
+
+.ms-financial-edu-social-media-links
+{
+    
+    display : flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    gap: 8%;
+    justify-content: center;
+    color: var(--app-font-color-black);
+
+}
+

@@ -1,0 +1,94 @@
+.chat-widget{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  cursor: pointer;
+  width: 120%;
+ 
+
+}
+
+.chat-widget > *
+{
+ position: fixed;
+  bottom: 2vh;          /* a little margin from top */
+  right: 2.5vh;         /* a little margin from left */
+  width: 4vw;     /* shrink the image */
+
+}
+
+.chat-widget img {
+  height: auto;      /* maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 50%; 
+  z-index: 1100;
+  border: 4px solid var(--app-bg-color-secondary);
+  transition: .3s ease;  
+}
+
+
+.chat-widget img:hover
+{
+  border: 4px solid #000;  
+}
+
+.chat-widget img:hover ~ .chat-widget-svg path
+{
+
+    fill: var(--app-bg-color);
+
+}
+
+/* .chat-widget .chat-widget-text
+{
+    bottom: 10vh;
+    color: white;
+    font-size:70%;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+} */
+
+
+.chat-widget-svg {
+
+  z-index: 1103;
+  bottom: 7vh;
+  right: .6vh;
+  /* background-color: black; */
+  /* border-radius: 999px; */
+  fill: white; 
+  width: 13vh;    
+  height: 13vh; 
+   /*
+  height: auto; 
+  bottom: 7vh;
+  right: 1vh;
+  font-size:330%;  */
+  /* color: white;
+  font-size:70%;
+  font-weight: bold;
+  white-space: nowrap;*/
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  
+  
+  
+  
+}
+
+.chat-widget-svg text {
+  font-family: sans-serif;
+  color: white;
+  text-align: bottom;
+  font-size:8vh;
+  
+  
+}
+
+/* .curved-text
+{
+  padding-top: 5vh;
+} */

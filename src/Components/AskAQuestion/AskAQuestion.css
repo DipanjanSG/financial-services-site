@@ -1,0 +1,98 @@
+.ask-qs
+{
+    display: flex;
+    gap:5%;
+    justify-content: space-evenly;
+    margin: 5% 5%;
+    max-height: 95%;
+    
+}
+
+.ask-qs-personal-details
+{
+    display:flex;
+    flex-direction: column;
+    gap:5%;
+    justify-content: space-between;
+    
+}
+
+.ask-qs-input
+{
+    border-radius: 999px;
+    padding: 3.5%;
+    padding-left: 4%;
+    border: none;
+    resize: none;
+    /* background-color: var(--app-bg-color-secondary); */
+    /* color: var(--app-bg-color); */
+    outline: none;
+    color : var(--app-bg-color);
+    height: 12%;
+    background-color: var(--app-bg-color-2)
+
+}g
+
+
+
+/* .ask-qs-msg-section > *
+{
+    border-radius: 10px;
+    outline: none; 
+    border: none;
+} */
+
+.ask-qs-msg-section
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*align-items: center; */
+
+}
+
+.ask-qs-msg-section > *
+{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom:.5%;
+}
+
+.ask-qs-subject
+{
+    height: 12%;
+    border-radius: 999px;
+    padding: 3.5%;
+    padding-left: 4%;
+    border: none;
+    /* margin-bottom: 1%; */
+    max-height: 12%;
+    color : var(--app-bg-color);
+
+
+}
+
+.ask-qs-textarea
+{
+    padding: 3%;
+    outline: none;
+    border-radius: 10px;
+    display : block;
+    width: 100%;
+    color : var(--app-bg-color);
+    /* margin-bottom: 1%; */
+    resize: none;
+
+}
+
+.ask-qs-send-button
+{
+     /* min-width: 100%; */
+    color : var(--app-bg-color);
+    background-color: black;
+    font-size: 120%;
+    font-weight:bold;
+
+    
+
+}

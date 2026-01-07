@@ -1,0 +1,65 @@
+
+
+.single-horizontal-tile{
+    color: var(--app-font-color-white);
+    /* font-size: 4vh; */
+    width: 99vw;
+    height:30vw;
+    background: #a41034;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 20vh 0 20vh 0;
+    height: 40vw;
+    width: 22.25vw;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden; 
+}
+
+.single-horizontal-tile img
+{
+    width:100%;
+    min-height: 60%;
+    max-height: 60%;
+    object-fit: fill;
+}
+
+.single-horizontal-tile .mahasamvit-edu-faculty-details
+{
+       height:40%;
+       width:100%;
+       background: var( --app-bg-color-misc);
+       color : var( --app-font-color-white);
+       /* font-family: Georgia; */
+       text-align: center;
+       padding :20px 12px;
+       
+       /* margin: 0px 0px; */
+       /* font-size:60%; */
+}
+
+.mahasamvit-edu-faculty-name
+{
+    font-size: 90%;
+    font-weight: 640;
+    /* padding :0 26px; */
+    text-align: center;
+}
+
+
+.mahasamvit-edu-faculty-courses-taught
+{
+    font-weight: 600;
+    padding :0 20px;
+}
+
+ p {
+     padding :0 20px;
+} 
+
+
+/* .mahasamvit-edu-faculty-action
+{
+    text-align: center;
+} */
