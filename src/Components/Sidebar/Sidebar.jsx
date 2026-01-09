@@ -1,10 +1,20 @@
 import './Sidebar.css'
 import SidebarMainItem from '../SidebarMainItem/SidebarMainItem';
+import { useState } from 'react';
 
 
 export default function Sidebar({monthlyArticlesList})
 {
 
+    const [isMonthNavigationOpen, setIsMonthNavigationOpen] = useState(false);
+
+    const  toggleArrow = () => 
+    {
+        setIsMonthNavigationOpen(!isMonthNavigationOpen);
+    }
+
+
+  
     return(
      
         <section className="article-page-side-bar">
@@ -14,15 +24,17 @@ export default function Sidebar({monthlyArticlesList})
                     return (
                         <section className="article-page-side-bar-month-list">
                             <section className="article-page-side-bar-month"><p>&#128467;</p><p>{item.month}</p>
-                                <p>&#8964;</p>
+                                {isMonthNavigationOpen ? <p onClick={toggleArrow}>&#9660;</p>: <p onClick={toggleArrow}>&#9654;</p>}
                             </section>
 
 
-                            {item.monthlyArticle.map((item,index)=>
+                            {isMonthNavigationOpen &&
+                            
+                                item.monthlyArticle.map((item,index)=>
                                 {
                                     return (<SidebarMainItem data={item.title}/>)
                                 })
-                            }
+                            } 
                        
                         </section>
                            )

@@ -14,8 +14,7 @@ export default function SidebarMainItem({data})
                                 
         //                         return (
         <section className='single-article-dropdown'>
-              
-                                        {data}
+           &nbsp; &nbsp; &#9642; <Link >{data}</Link>
         </section>
                         
        //         )})

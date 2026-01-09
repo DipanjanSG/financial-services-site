@@ -1,13 +1,9 @@
-.monthly-article-dropdown
-{
-   
-
-}
-
-
 .single-article-dropdown
 {
 
     background-color: var(--app-bg-color-dark);
+    text-align: center;
+    color: var(--app-font-color-white);
+
     
 }

@@ -1,16 +1,16 @@
 .article-page-side-bar
 {
     display: flex;
-    direction: column;
+    flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
     min-width: 25%;
     max-width: 25%;
     min-height: 100%;
-    background-color: var( --app-font-color-white);
+    background-color: var(--app-bg-color);
     top: 0%;
     left:0%;
-    color: var(--app-bg-color-dark);
+    color: var(--app-font-color-white);
     font-size: 120%;
     
 
@@ -21,35 +21,34 @@
     display: flex;
     direction: column;
     flex-wrap: wrap;
-    border-bottom: 10px solid black;
+    border-bottom: 1px solid var( --app-font-color-white);
     /* min-width: 100%;
     max-width: 100%;
     min-height: 5%; */
-    max-height: auto;
     /* gap: 1px; */
+
+    /* justify-content: center; */
+ 
 }
 
 .article-page-side-bar-month-list > *
 {
-    min-height: 10%;
-    max-height: 10%;
+    min-height: 17%;
+    max-height: 17%;
     min-width: 100%;
     max-width: 100%;
+
+    
 
 
 }
 .article-page-side-bar-month
 {  
     display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 17%;
+    max-height: 17%;
+    /* align-items: center;
+    justify-content: center; */
 
 }
 
-
-
-/* .article-page-side-bar-month i
-{
-     
-    padding-left: 10%;
-} */
