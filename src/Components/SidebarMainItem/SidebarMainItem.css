@@ -4,6 +4,19 @@
     background-color: var(--app-bg-color-dark);
     text-align: center;
     color: var(--app-font-color-white);
+    min-height: 17%;
+    max-height: 17%;
+}
 
-    
+
+
+.single-article-dropdown a
+{
+    color: var(--app-font-color-white);
+}
+
+
+.single-article-dropdown a:hover
+{
+    color: var(--app-bg-color-secondary);
 }

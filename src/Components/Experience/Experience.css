@@ -1,110 +1,12 @@
-
-.experience-container {
-  /*
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  */
-  /* z-index: 10;                         */
+.experience-heading {
+  width: 98vw;
+  height: 100vh;
+  max-width: 98vw;
+  max-height: 100vh;
+  text-align: center;
   color: var(--app-heading-color-primary);
-  /* text-align: center; */
-  /* font-family: "Source Serif 4", serif; */
-  font-optical-sizing: auto;
-  font-weight: 10;
-  font-style: normal;
-  font-size: clamp(1.2rem, 3vw, 3rem);
-  max-width : 100vw;
-  min-height : 10vh;
-  max-height : 10vh;
-  dipslay: flex;
-  direction: column;
-  background-image: url("./assets/learn-earn.png");
-  justify-content: center;
-  align-items: center;
-
-}
-
-.experience-section-container
-{
-
-   color: transparent;
-}
-
-.experience-cover-heading
-{
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);   */
-  
-  /* font-family: 'Aguero';
-  font-size: 17vh;
-  font-weight: bold;
-  text-align: center; */
-  text-align: center; 
-  position : absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.experience-emphasis
-{
-
-  font-size: 60vh;
-  font-family: 'Aguero';
-  font-weight: bold;
-  text-align: center; 
-  line-height: 1.6vh;
-  color: transparent; 
-  -webkit-text-stroke : 2px var(--app-heading-color-primary);
-  z-index: 999px;
-
-  
-}
-
-
-#homepage-image {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: var(--app-bg-color);
-
-  overflow: hidden;
-}
-
-#homepage-image > * {
-  /* position: relative; */
-  flex: 0 0 50vw;  
-  height: 50%;    
-  box-sizing: border-box;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  overflow: hidden; /* hides image overflow when using object-fit */
-}
-
-#homepage-image img {
-  /* width: 100%;
-  height: 100%;      */
-  object-fit: cover; /* maintain aspect ratio while filling */
-  object-position: center;
-  display: block;
-  filter: brightness(35%); /* darken base image slightly */
-}
-
-
-
-/* ✅ Gradient overlay strongest at bottom */
-#homepage-image > *::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.75) 0%,   /* strongest white at bottom */
-    rgba(0, 0, 0, 0.6) 50%,  /* medium in middle */
-    rgba(0, 0, 0, 0.6) 100%  /* transparent at top */
-  );
-  pointer-events: none;
+  font-family: "Source Serif 4", serif;
+  font-weight: 300;
+  font-size: 18vh;
+  padding: 2% 0;
 }

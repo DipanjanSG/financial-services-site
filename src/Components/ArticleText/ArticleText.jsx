@@ -1,11 +1,35 @@
 import './ArticleText.css';
 import HorizontalQuotedSection from '../HorizontalQuotedSection/HorizontalQuotedSection';
 import  ArticleHighlights from '../ArticleHighlights/ArticleHighlights';
-
+import Sidebar from '../Sidebar/Sidebar';
+import Article from '../../Pages/Models/Article';
 
 export default function ArticleText()
 {
+
+    // const decArt1 = new Article("Dec Insight 1", "Decemeber","12/12/2025",earnWhileLearning);
+    // const decArt2 = new Article("Dec Insight 2", "Decemeber", "13/12/2025",earnWhileLearning);
+    // const decArt3 = new Article("Dec Insight 3", "Decemeber", "13/12/2025",earnWhileLearning);
+    // const monthlyArticlesList = 
+    // [
+
+    //     {
+    //         month: "December",
+    //         monthlyArticle: [decArt1, decArt2, decArt3]
+    //     },
+
+    //     {
+    //         month: "November",
+    //         monthlyArticle: [decArt1, decArt2]
+    //     }
+    
+    
+    // ];
+
+
     return(
+      <>
+        {/* <Sidebar monthlyArticlesList={monthlyArticlesList}></Sidebar> */}
          <main className="article-main-text">
             
             This is a placeholder article used to demonstrate how content will appear once 
@@ -58,6 +82,7 @@ export default function ArticleText()
             structured arguments, and guide the reader through insights with clarity and 
             purpose. Typography, spacing, and layout are shown here for preview only.
           </main>
+          </>
     );
 
 }

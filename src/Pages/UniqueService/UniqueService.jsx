@@ -7,7 +7,6 @@ import TileContainer from '../../Components/TileContainer/TileContainer';
 import KnowMoreButton from '../../Components/Buttons/KnowMoreButton/KnowMoreButton';
 import OnlyTextCover from '../../Components/CoverSections/OnlyTextCover/OnlyTextCover';
 import coverPic from '../../assets/ask-us-anything-cover.png';
-import Experience from '../../Components/Experience/Experience';
 import experienceCoverPic from "../../assets/experience-cover.png";
 import TripleTextSection from '../../Components/TripleTextSection/TripleTextSection';
 

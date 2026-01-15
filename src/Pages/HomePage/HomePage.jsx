@@ -12,11 +12,12 @@ import TileContainer from '../../Components/TileContainer/TileContainer';
 import Faculty from '../Models/Faculty';
 // import { createContext } from 'react'; 
 import TileContainerContext from '../../Contexts/TileContainerContext.js';
+import KnowMoreButtonRound from '../../Components/Buttons/KnowMoreButtonRound/KnowMoreButtonRound';
 import KnowMoreButton from '../../Components/Buttons/KnowMoreButton/KnowMoreButton';
-import Experience from '../../Components/Experience/Experience';
 import experienceCoverPic from "../../assets/experience-cover.png";
 import MarketInsights from '../../Components/MarketInsights/MarketInsights.jsx';
-
+import FullPageCover from '../../Components/CoverSections/FullPageCover/FullPageCover.jsx';
+import Experience from '../../Components/Experience/Experience';
 
 // export const facultyCardContext = createContext();
 
@@ -36,7 +37,7 @@ function HomePage() {
    
     const knowMoreSection = {
         isSectionVisible : true,
-        component: KnowMoreButton
+        component: KnowMoreButtonRound
     };
 
     const courseDetails = [];
@@ -45,39 +46,18 @@ function HomePage() {
 
 
       <div>
-         <div id="homepage-logo">
-            <img src={mahasamvitLogo}/>
-            <span>Mahasamvit Finance</span>
-            <span> </span>
-         </div>
+         <FullPageCover/>
 
-         <div id="homepage-heading" >
-            <section className="cover-heading">Mahasamvit Financial Services</section>
+         <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
+            <TileContainer facultyList={facultyList}/>
+         </TileContainerContext.Provider>
 
-               {/* <div id="homepage-links"  > 
-                  <span ><Link  to="/earn-while-learning"><span  className="special-button">Earn while you learn</span></Link></span> 
-                  |
-                  <span ><Link to="/course-categories"><span className="shrink-underline-black">Courses Offered By Us</span></Link> </span>
-               </div>  */}
-         </div>
+         <MarketInsights courseDetails={courseDetails}/>
 
-         <div id="homepage-image">
-            <div className="homepage-img-container">
-               <img src={financeServicesCover}/>
-            </div>
-         </div>
-      
+         <Experience/>
+         <HorizontalSectionWithPic knowMoreLink="/our-values" picOnLeft={false} pic={weAreUnique} heading={"We are different"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>
 
-      
-      <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
-         <TileContainer facultyList={facultyList}/>
-      </TileContainerContext.Provider>
-
-      <MarketInsights courseDetails={courseDetails}/>
-
-      <Experience coverPic={experienceCoverPic}/>
-      <HorizontalSectionWithPic knowMoreLink="/our-values" picOnLeft={false} pic={weAreUnique} heading={"We are different"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>
-
+         
       </div>
 
 

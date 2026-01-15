@@ -1,4 +1,5 @@
-import './SidebarMainItem.css'
+import './SidebarMainItem.css';
+import { Link } from 'react-router-dom';
 
 
 export default function SidebarMainItem({data})
@@ -14,7 +15,7 @@ export default function SidebarMainItem({data})
                                 
         //                         return (
         <section className='single-article-dropdown'>
-           &nbsp; &nbsp; &#9642; <Link >{data}</Link>
+           &nbsp; &nbsp; &#9642; <Link to="/">{data}</Link>
         </section>
                         
        //         )})

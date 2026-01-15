@@ -2,9 +2,11 @@
 {
 
  
-    max-width: 85%;
+    max-width: 100%;
     color: var(--app-font-color-white);
     margin: 10% auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     font-size: 150%;
 }
 

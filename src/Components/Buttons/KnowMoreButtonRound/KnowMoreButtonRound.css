@@ -1,24 +1,28 @@
-.know-more-container
+.know-more-container-round
 {
 
     margin: 8% 0%;
     font-weight: bolder;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
     gap: 2%;
     /* transform: translateX(-50%); */
-    text-align: right;
+    text-align: center;
+    width:100%;
+    height: 100%;
 
 } 
 
 
-.know-more-arrow
+.know-more-arrow-round
 {
 
     color: var(--app-bg-color);
-    height: 3vw;
+    height: 15vh;
+    width: 15vh;
+    aspect-ratio: 1/1;
     text-align: center;
     transition: 0.4s ease;
     display: flex;
@@ -26,13 +30,12 @@
     align-items : center;
     background-color: var(--app-heading-color-primary);
     color: var(--app-bg-color-dark);
-    width: 33%;
-    border-radius: 3px;
+    border-radius: 50%;
 
 }
 
 
-.know-more-arrow:hover
+.know-more-arrow-round:hover
 {
 
     background : var(--app-bg-color-dark);

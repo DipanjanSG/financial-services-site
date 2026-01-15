@@ -2,9 +2,9 @@ import './ContactUs.css';
 import OnlyTextCover from '../../Components/CoverSections/OnlyTextCover/OnlyTextCover';
 import Faculty from '../Models/Faculty';
 import whatsAppUs from "../../assets/whatsapp-us.png";
-import TripleTiles from '../../Components/TripleTiles/TripleTiles';
+import TripleTilesUnequal from '../../Components/TripleTilesUnequal/TripleTilesUnequal';
 import { useState } from 'react';
-import DualTiles from '../../Components/DualTiles/DualTiles';
+import DualTilesUnequal from '../../Components/DualTilesUnequal/DualTilesUnequal';
 import PopUpExtraInfo from '../../Components/PopUps/PopUpExtraInfo/PopUpExtraInfo';
 import CallUs from '../../assets/call-us.png';
 import EmailUs from '../../assets/email-us.png';
@@ -118,7 +118,7 @@ export default function ContactUs()
             
 
             <section className='tile-container'>
-            <TripleTiles careerLeftTile={"E-mail"} careerMiddleTile={"Mail"} careerRightTile={"Office Location"} pics={rowOnePics} handleTileClick={handleTileClick} isLink={false}></TripleTiles>
+            <TripleTilesUnequal careerLeftTile={"E-mail"} careerRightTopTile={"Mail"} careerRightBottomTile={"Office Location"} pics={rowOnePics} handleTileClick={handleTileClick} isLink={false}></TripleTilesUnequal>
             </section>
 
 
@@ -126,7 +126,7 @@ export default function ContactUs()
             
             
             <section className='tile-container'></section>
-                <DualTiles careerLeftTile={"WhatsApp"} careerRightTile={"Call"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={false}></DualTiles>
+                <DualTilesUnequal careerLeftTile={"Call"} careerRightTile={"WhatsApp"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={false}></DualTilesUnequal>
             <section className='tile-container'></section>
            
            {/* <DualTiles careerLeftTile={"Govt Jobs (SEBI, RBI, EXCHANGES)"} careerRightTile={"Accounts & Tax"} pics={rowTwoPics}></DualTiles> */}

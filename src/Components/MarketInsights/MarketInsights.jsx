@@ -1,5 +1,9 @@
 import './MarketInsights.css';
+import marketInsights from  '../../assets/market-insights.jpg';
+
+
 export default function MarketInsights(/*{courseDetails}*/)
+
 {
 
 
@@ -10,7 +14,7 @@ export default function MarketInsights(/*{courseDetails}*/)
       [
         {
             name: "January , Market Insights 2026",
-            image: "https://rapidapi-prod-apis.s3.amazonaws.com/865b1327-4dfd-4bdc-b6c0-0bc94f5c82bf.png",
+            image: marketInsights,
             subModules: [
                
               {
@@ -62,7 +66,7 @@ return (
   
    <ul className="insights-article-image-list">
        {item.subModules.map((subItem, index) => 
-         (<><section className="insights-article-image"><img src="https://rapidapi-prod-apis.s3.amazonaws.com/865b1327-4dfd-4bdc-b6c0-0bc94f5c82bf.png"/><li><strong>{subItem.name}</strong></li>
+         (<><section className="insights-article-image-container"><img className="insights-article-image"  src={marketInsights}/><li><strong>{subItem.name}</strong></li>
         </section>
         
         {index < item.subModules.length-1 && <hr/>}</>

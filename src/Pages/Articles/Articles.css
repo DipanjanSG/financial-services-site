@@ -1,7 +1,23 @@
+.article-page
+{
+    display:flex;
+    flex-direction: row;
+    min-width: 100%;
+    max-width:100%;
+
+}
+
 .article-container
 {
 
-    margin : 0 auto;
+    /* margin-left : 20%; */
+    /* margin-right : 5%; */
+
+    margin:5% 0%;
+
+
+    min-width: 80%;
+    max-width:80%;
 
 }
 

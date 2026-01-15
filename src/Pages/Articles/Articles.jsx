@@ -39,21 +39,23 @@ export default function Articles()
 
     return(
         <section>
-            <article className='article-container'>
-                <section className='article-heading'>
-                    <header >{article.title}</header>
-                    <section className='article-metadata'>
-                        <time>{article.date}</time>
-                        <div className="article-share-icon" title="Share Article"> &#x2934;</div>
-                    </section>
-                    
-                </section>
-
-            
-                <SingleArticlePic/>
-                <ArticleText/>
+            <article className='article-page'>
+                <Sidebar monthlyArticlesList={monthlyArticlesList}/>
+                    <article className='article-container'>
+                        <section className='article-heading'>
+                            <header >{article.title}</header>
+                            <section className='article-metadata'>
+                                <time>{article.date}</time>
+                                <div className="article-share-icon" title="Share Article"> &#x2934;</div>
+                            </section>
+                            
+                        </section>
+                        <SingleArticlePic/>
+                        <ArticleText/>
+                    </article>
+                
             </article>
-            <Sidebar monthlyArticlesList={monthlyArticlesList}></Sidebar>
+            
       
 
         </section>

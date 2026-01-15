@@ -30,7 +30,7 @@ function Footer()
             </section>
 
             <section>
-                <h2>Find us On</h2>
+                <h2>Follow us here</h2>
 
                 <div id="find-us-on-social-media" className="ms-financial-edu-social-media-links">
                     <span>

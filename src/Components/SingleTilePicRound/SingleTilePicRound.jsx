@@ -25,6 +25,8 @@ function SingleTilePicRound({contentsObj})
                                          style={styleObj}>
                                                     
             <img src={`${import.meta.env.BASE_URL}${contentsObj.pic}`}></img>
+
+
             <section className="mahasamvit-edu-faculty-details">
 
                 <section className="mahasamvit-edu-faculty-name">
@@ -37,7 +39,7 @@ function SingleTilePicRound({contentsObj})
                 {/* <p></p> */}
                 {contentsObj.coursesTaught.length > 0 && <section><p class="mahasamvit-edu-faculty-courses-taught">Courses Taught</p>
                 <p>{contentsObj.coursesTaught.join(", ")}</p></section>}
-                <section className="mahasamvit-edu-faculty-action">{knowMoreSection.isSectionVisible && knowMoreSection.component && <knowMoreSection.component/>}</section>
+                <section className="mahasamvit-edu-faculty-action">{knowMoreSection.isSectionVisible && knowMoreSection.component && <knowMoreSection.component/>}</section> 
             </section>
         </section>
     )

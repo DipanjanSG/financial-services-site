@@ -9,38 +9,28 @@ function Header()
 
 
     return (
+        <header id = "footer" className="ms-financial-edu-website-header">
+            <section  className="header-flex" >  
+
+                <section>
+                    About
+                </section>
+
+                <section>
+                    Client Stories
+                </section>
+
+                <section>
+                    Our Services
+                </section>
     
-    <header id = "footer" className="ms-financial-edu-website-header">
-        <section id ="footer-contents" className="header-flex" >  
-
-            <section>
-                About
-            </section>
-
-            <section>
-                Client Stories
-            </section>
-
-            <section>
-                Our Services
-            </section>
-{/* 
-            <section>
-                <h2>Contact Us</h2>
-                <p> 123 Financial District<br/> 
-                    Kolkata, West Bengal <br/>
-                    India 700001.
-                </p>
-
-                <p>+91 98765 43210</p>
-                <p>contact@mahasamvit.com</p>
-                
-        </section> */}
+                <section>
+                    Contact Us
+                </section>
 
             </section>
-
-
-    </header>)
+        </header>
+    )
 
 }
 
