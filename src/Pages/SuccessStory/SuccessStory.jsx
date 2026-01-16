@@ -1,5 +1,6 @@
 import './SuccessStory';
 import HorizontalSectionWithPic  from '../../Components/HorizontalSectionWithPic/HorizontalSectionWithPic';
+import SingleTilePic from '../../Components/SingleTilePic/SingleTilePic';
 import TileContainer from '../../Components/TileContainer/TileContainer';
 import OnlyTextCover from '../../Components/CoverSections/OnlyTextCover/OnlyTextCover';
 import TileContainerContext from '../../Contexts/TileContainerContext';
@@ -29,6 +30,8 @@ export default function SuccessStory()
         isSectionVisible : false
     };
 
+    const singleTileType = SingleTilePic;
+
 
     return(
 
@@ -37,16 +40,16 @@ export default function SuccessStory()
 
 
             <TileContainerContext.Provider value={{cssValues, knowMoreSection}}>
-               <TileContainer facultyList={facultyList}/>
+               <TileContainer facultyList={facultyList} singleTileType={singleTileType}/>
             </TileContainerContext.Provider>
 
-            <HorizontalSectionWithPic picOnLeft={false} pic={coverPic2} heading={"High-quality service combined with practical insights. The overall experience felt professional and reliable."} text={"Satayoki Dey"}/>
+           <HorizontalSectionWithPic picOnLeft={false} pic={coverPic2} heading={"Kartik Pal"} text={"The quality, attention to detail, and overall professionalism truly stand out. Everything was handled smoothly, and expectations were met exactly as promised."}/>
+           <HorizontalSectionWithPic picOnLeft={true} pic={coverPic2} heading={"Suchanda Sen"} text={"The quality, attention to detail, and overall professionalism truly stand out. Everything was handled smoothly, and expectations were met exactly as promised."}/>
+           <HorizontalSectionWithPic picOnLeft={false} pic={coverPic2} heading={"Oishi Ghosh"} text={"The quality, attention to detail, and overall professionalism truly stand out. Everything was handled smoothly, and expectations were met exactly as promised."}/>
 
-            <HorizontalSectionWithPic picOnLeft={true} pic={coverPic1} heading={"Attention to detail and consistent support stood out the most. This has been a genuinely valuable experience."} text={"Ronen Sen"}/>
             
             
 
-            <HorizontalSectionWithPic picOnLeft={false} pic={coverPic3} heading={"Well-organized, easy to follow, and impactful. I’m very satisfied with the results and outcomes."} text={"Mamata Gupto"}/>
 
 
         </section>

@@ -61,12 +61,21 @@ return (
   <section className="course-syllabus-modules">
     <section className="insights-article-big-image">
       <img src={item.image}></img>
-      <h3>{item.name}</h3>
+      <section className="insights-main-heading-section">
+        <strong className="insights-small-heading" ><h3>{item.name}</h3></strong>
+        <div className="insights-read-more shrink-underline-black">Read More</div>
+      </section>
     </section>
   
    <ul className="insights-article-image-list">
        {item.subModules.map((subItem, index) => 
-         (<><section className="insights-article-image-container"><img className="insights-article-image"  src={marketInsights}/><li><strong>{subItem.name}</strong></li>
+         (<><section className="insights-article-image-container">
+          <img className="insights-article-image"  src={marketInsights}/>
+
+          <section className="insights-heading-section">
+            <strong className="insights-small-heading" >{subItem.name}</strong>
+            <div className="insights-read-more shrink-underline-black">Read More</div>
+          </section>
         </section>
         
         {index < item.subModules.length-1 && <hr/>}</>

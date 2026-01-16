@@ -21,10 +21,6 @@ function Header()
                 </section>
 
                 <section>
-                    Our Services
-                </section>
-    
-                <section>
                     Contact Us
                 </section>
 
