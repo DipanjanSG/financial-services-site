@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Router basename ="/financial-services">
+      <Router basename ="/global-financial-services">
       <div>
       <Header/>  
       <Routes>
