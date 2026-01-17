@@ -17,7 +17,7 @@ export default function AboutUs()
 
         <section>
             
-            <VertialSectionWithPic picOnLeft={false} pic={founder} heading={"A Class Apart"} text={"A seasoned wealth management expert with extensive experience in financial planning, investment strategy, and portfolio optimization. Skilled in understanding client goals and delivering personalized solutions across equity, debt, and alternative investments. Known for a disciplined, research-driven approach that balances growth, income, and risk management. Adept at building long-term client relationships through transparency, trust, and consistent performance. Committed to helping individuals and families achieve sustainable financial security and wealth preservation across generations."}/> 
+            <VertialSectionWithPic picOnLeft={false} pic={founder} heading={"How we started"} text={"This business began with a belief that financial services should be built on integrity, not complexity. Starting with a small client base and a strong ethical foundation, we focused on delivering real value — one relationship at a time."}/> 
 
             <section className='about-us-heading'>
                 <p >Our Business</p>

@@ -11,7 +11,6 @@ import coverPic3 from '../../assets/client3.png';
 import coverPic from '../../assets/success-dtories-cover.png';
 import Faculty from '../Models/Faculty';
 import MarketInsights from '../../Components/MarketInsights/MarketInsights.jsx';
-import marketInsightsPic from  '../../assets/market-insights-december.jpg';
 
 
 
