@@ -9,9 +9,14 @@ export default defineConfig({
     host: '0.0.0.0',   // 👈 IMPORTANT
     port: 5175,
     strictPort: true,
+    
+
+    allowedHosts: ['www.mahasamvit.com', 'mahasamvit.com'],
+
+
     hmr: {
       clientPort: 443
-    }
+    },
   }
 })
 
