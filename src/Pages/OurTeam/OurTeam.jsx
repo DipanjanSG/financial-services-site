@@ -8,7 +8,7 @@ import legalFinance from "../../assets/legal-finance.png";
 import capitalMarkets from "../../assets/capital-markets.png";
 import { useState } from "react";
 import Card from "../Models/Card";
-import CompanyAndRoles from "../../Components/CompanyAndRoles/CompanyAndRoles";
+// import CompanyAndRoles from "../../Components/CompanyAndRoles/CompanyAndRoles";
 
 
 export default function OurTeam() {
@@ -46,7 +46,7 @@ export default function OurTeam() {
       <span className="faculty-section-heading">Companies he has worked for</span>
       <hr></hr>
       <TilesWithOrgNames cardDetails={cardDetails} pics={rowOnePics} handleTileClick={handleTileClick} isLink={false}></TilesWithOrgNames> 
-      <CompanyAndRoles courseDetails={courseDetails}/>
+      {/* delete kore diyechilam <CompanyAndRoles courseDetails={courseDetails}/> */}
       {/*<div className="timeline-container">
         <div className="timeline-line" />
 

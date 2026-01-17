@@ -15,13 +15,15 @@
     display : flex;
     flex-direction : row;
     /* flex-wrap: wrap; */
-    gap: 5vw;
+    gap: 3vw;
     justify-content: space-evenly;
-    padding : 2vw  2vw;
+    padding : 1vw  1vw;
         
 
 
 }
+
+
 
 .footer-flex > * {
 
@@ -34,6 +36,33 @@
 
 }
 
+.footer-logo {
+
+  width: 40%;     /* shrink the image */
+  height: auto;      /* maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 50%; 
+
+}
+
+.footer-logo-section
+{
+  border-left: solid var(--app-font-color-white) 4px;
+  border-right: solid var(--app-font-color-white) 4px;
+}
+
+
+.footer-flex-sub
+{
+   display: flex;
+   flex-direction: column;
+   gap: 3%;
+}
+
+.footer-flex-sub hr
+{
+  color: var(--app-font-color-white);
+}
 
 /* ul { */
   /* list-style-type: none;   */

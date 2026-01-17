@@ -1,12 +1,12 @@
 
 #mahasamvit-edu-course-syllabus
 {
-    background-color:black;
-    color:#FFF;
+    background-color: var(--app-font-color-white);
+    color:var(--app-font-color-black);
     padding: 5vh;
     /* font-size: 10vh; */
 
-    text-align: left;
+    text-align: right;
     display:flex;
     flex-direction: column;
     min-height:50%;
@@ -25,7 +25,8 @@
 {
     display:flex;
     flex-direction: row;
-    /* align-items:center; */
+    gap:.1%;
+    align-items:center; 
        
 }
 
@@ -44,7 +45,7 @@
 
 #mahasamvit-edu-course-syllabus section ul{
 
-    color:#FFF;
+     color:var(--app-font-color-black);
     list-style-type: none; /* Removes bullets */
 }
 /* 
@@ -96,6 +97,8 @@
 
 }
 
+
+
 .insights-main-heading-section
 {
     justify-content: flex-start;
@@ -103,8 +106,33 @@
     display:flex;
     flex-direction: column;
     
+    
 }
 
+
+
+.insights-sub-heading
+{
+    max-width: 100%;
+    margin: 4% 0;
+    text-align: right;
+
+}
+
+.insights-big-section-small-text
+{
+     text-align: left;
+     margin: 4% 0;
+     font-size:larger;
+
+}
+
+
+.insights-big-section-heading
+{
+    text-align: left;
+    margin: 2% 0;
+}
 
 .insights-article-image
 {
@@ -140,6 +168,7 @@ flex-direction: column;
 {
    
     text-align:right;
+     margin: 2% 0;
 }
 
 

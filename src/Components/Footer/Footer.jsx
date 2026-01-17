@@ -3,6 +3,9 @@ import './Footer.css';
 import findUsOnFacebook from '../../assets/find-us-facebook-icon.svg';
 import findUsOnTwitter from '../../assets/find-us-twitter-icon.svg';
 import findUsOnInstagram from '../../assets/find-us-instagram-icon.svg';
+import { Link } from "react-router-dom";
+import mahasamvitLogo from "../../assets/mahasamvit-logo.png";
+
 
 function Footer()
 {
@@ -12,25 +15,37 @@ function Footer()
     
     <footer id = "footer" className="ms-financial-edu-website-footer">
         <section id ="footer-contents" className="footer-flex" >  
+            <section className="footer-flex-sub">
 
-            <section>
-                <h2>About</h2>
-                <span> Mahasamvit global financial services emmpowers
-                   bring unique financial services to you.
-                </span>
+                 <section>
+                    <h2>Current Clients</h2>
+                    <span> 200+ </span>
+                </section>
+                 <hr></hr>
+                <section>
+                    <h2>Who we are</h2>
+                    <span> Mahasamvit global financial services emmpowers
+                    bring unique financial services to you.
+                    </span>
+                </section>
+               
+               
             </section>
 
-            <section>
-                <h2>Quick Links</h2>
-                
-                    <span>Accounting Courses</span><br></br>
-                   <span>Finance Courses</span><br></br>
-                    <span>Legal Courses</span>
-                
+
+            <section className="footer-flex-sub footer-logo-section">
+                <section>
+                    <img src={mahasamvitLogo} className="footer-logo"></img>
+                    <h2>Mahasamvit Financial Services Ltd.</h2>
+                   
+                </section>
             </section>
 
-            <section>
-                <h2>Follow us here</h2>
+
+             <section className="footer-flex-sub ">
+
+                 <section>
+                <h2>We are On Social media</h2>
 
                 <div id="find-us-on-social-media" className="ms-financial-edu-social-media-links">
                     <span>
@@ -54,6 +69,18 @@ function Footer()
 
                 
 
+            </section>
+             <hr></hr>
+            <section>
+                <h2>Quick Links</h2>
+                
+                    {/* <span> <Link to="/about-us" className="header-links">What we Do</Link></span><br></br> */}
+                   <span><Link to="/about-us" className="header-links">Contact Us</Link></span><br></br>
+                    <span><Link to="/about-us" className="header-links">Client Testimonials</Link></span>
+                
+            </section>
+           
+           
             </section>
 {/* 
             <section>

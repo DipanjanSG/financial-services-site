@@ -3,7 +3,7 @@
     background-color: var(--app-bg-color-secondary);
     color: var(--app-font-color-black);
     z-index: 2;
-    height: 10vh;
+    height: 11vh;
     /* position: fixed;  */
     bottom: 0;
 
@@ -71,3 +71,13 @@ span a img{
 
 }
 
+.header-links
+{
+  color: var(--app-bg-color-misc );
+}
+
+
+.header-links:hover
+{
+    color: var(--app-font-color-white);
+}

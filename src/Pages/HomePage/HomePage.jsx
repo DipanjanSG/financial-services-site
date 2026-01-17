@@ -2,6 +2,7 @@ import './HomePage.css'
 // import financeStudent from "../../assets/finance-student.jpg";
 import mahasamvitLogo from "../../assets/mahasamvit-logo.png";
 import financeServicesCover from "../../assets/finance-services-cover.jpg";
+import SingleTilePicRound from '../../Components/SingleTilePicRound/SingleTilePicRound';
 import HorizontalSectionWithPic  from '../../Components/HorizontalSectionWithPic/HorizontalSectionWithPic';
 import weAreUnique from '../../assets/we-are-unique.png';
 // import { Link } from "react-router-dom";
@@ -18,6 +19,7 @@ import experienceCoverPic from "../../assets/experience-cover.png";
 import MarketInsights from '../../Components/MarketInsights/MarketInsights.jsx';
 import FullPageCover from '../../Components/CoverSections/FullPageCover/FullPageCover.jsx';
 import Experience from '../../Components/Experience/Experience';
+import marketInsightsPic from  '../../assets/market-insights.jpg';
 
 // export const facultyCardContext = createContext();
 
@@ -40,7 +42,55 @@ function HomePage() {
         component: KnowMoreButtonRound
     };
 
-    const courseDetails = [];
+    const singleTileType = SingleTilePicRound;
+
+      
+       const courseDetails = {
+      
+            syllabusModules : 
+            [
+              {
+                  title: "Market Insights",
+                  name: "December 2025 , Insights",
+                  image: marketInsightsPic,
+   
+                  subModules: [
+                     
+                    {
+                       name: "November 2025 , Insights",
+                       details: "p",
+                    },
+                      
+                    {
+                       name: "September 2025 , Insights",
+                       details: "p"
+                    },
+                    {
+                       name: "October 2025 Insights",
+                       details: "p"
+                    },
+                    {
+                       name: "September 2025 , Insights",
+                       details: "p"
+                    }
+                  ]
+                   }
+                   ,
+                  // {
+                  // name: "x",
+                  // subModules: [
+                     
+                  //   {
+                  //      name: "x",
+                  //      details: "p"
+                  //   }
+                  // ]
+                  // }
+      
+               
+          ]
+      
+        }
 
   return (
 
@@ -49,10 +99,10 @@ function HomePage() {
          <FullPageCover/>
 
          <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
-            <TileContainer facultyList={facultyList}/>
+            <TileContainer facultyList={facultyList} singleTileType={singleTileType}/>
          </TileContainerContext.Provider>
 
-         <MarketInsights courseDetails={courseDetails}/>
+         <MarketInsights courseDetails={courseDetails} knowMoreSection={knowMoreSection}/>
 
          <Experience/>
          <HorizontalSectionWithPic knowMoreLink="/our-values" picOnLeft={false} pic={weAreUnique} heading={"We are different"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>

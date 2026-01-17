@@ -3,6 +3,7 @@ import './Header.css';
 import findUsOnFacebook from '../../assets/find-us-facebook-icon.svg';
 import findUsOnTwitter from '../../assets/find-us-twitter-icon.svg';
 import findUsOnInstagram from '../../assets/find-us-instagram-icon.svg';
+import { Link } from "react-router-dom";
 
 function Header()
 {
@@ -13,15 +14,15 @@ function Header()
             <section  className="header-flex" >  
 
                 <section>
-                    About
+                    <Link to="/about-us" className="header-links">About</Link>
                 </section>
 
                 <section>
-                    Client Stories
+                    <Link to="/success-story" className="header-links">Client Stories</Link>
                 </section>
 
                 <section>
-                    Contact Us
+                    <Link to="/contact-us" className="header-links">Contact Us</Link>
                 </section>
 
             </section>

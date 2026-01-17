@@ -9,9 +9,9 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-    border-radius: 20vh 0 20vh 0;
+    border-radius: 8vh 0 8vh 0;
     height: 40vw;
-    width: 22.25vw;
+    width: 33vw;
     display:flex;
     flex-direction:column;
     overflow: hidden; 
@@ -22,7 +22,7 @@
     width:100%;
     min-height: 60%;
     max-height: 60%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .single-horizontal-tile .mahasamvit-edu-faculty-details

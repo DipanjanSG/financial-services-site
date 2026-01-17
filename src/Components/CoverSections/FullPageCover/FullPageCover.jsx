@@ -10,7 +10,6 @@ export default function FullPageCover()
             <div id="homepage-logo">
                 <img src={mahasamvitLogo}/>
                 <span>Mahasamvit Finance</span>
-                <span> </span>
             </div>
 
             <div id="homepage-heading" >
@@ -23,7 +22,7 @@ export default function FullPageCover()
                     <span id="homepage-links"> 
                         <span>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <Link to="/course-categories"><span className="shrink-underline-black">Know our services</span></Link> </span> 
+                            <Link to="/course-categories"><span className="shrink-underline-white">Know our services</span></Link> </span> 
                     </span>
                     
                 </section>

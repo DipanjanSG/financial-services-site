@@ -35,8 +35,8 @@
 .know-more-arrow:hover
 {
 
-    background : var(--app-bg-color-dark);
-    color: var(--app-heading-color-primary);
+    background : var(--app-font-color-white);
+    color: var(--app-bg-color-dark);
     cursor: pointer;
     
 }
