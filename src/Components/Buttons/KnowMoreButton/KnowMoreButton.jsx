@@ -9,7 +9,7 @@ export default function KnowMoreButton({onClickLink, marginLeft})
     const navigate = useNavigate();
    
     return(
-            <section className='know-more-container' style={{ marginRight : "0%"}}>
+            <section className='know-more-container' style={{ marginLeft: "0%" , marginRight : "0%"}}>
                 <span className="know-more-arrow" onClick={()=> navigate(onClickLink)}>Get Details</span>
             </section>
         );

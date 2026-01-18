@@ -1,8 +1,7 @@
 import mahasamvitLogo from "../../../assets/mahasamvit-logo.png";
-import financeServicesCover from "../../../assets/finance-services-cover.jpg";
 import { Link } from "react-router-dom";
 
-export default function FullPageCover()
+export default function FullPageCover({coverPic, coverText, linkText})
 {
 
     return (
@@ -15,22 +14,24 @@ export default function FullPageCover()
             <div id="homepage-heading" >
                 <section className="cover-heading">
                     
-                    Mahasamvit <br/>
-                    Financial  <br/> 
-                    Services 
+                   {coverText[0]}  <br/>
+                   {coverText[1]}  <br/> 
+                   {coverText[2]}  
                 
-                    <span id="homepage-links"> 
+                    {linkText &&
+                        
+                        <span id="homepage-links"> 
                         <span>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <Link to="/course-categories"><span className="shrink-underline-white">Know our services</span></Link> </span> 
-                    </span>
+                            <Link to="/course-categories"><span className="shrink-underline-white">{linkText}</span></Link> </span> 
+                    </span>}
                     
                 </section>
             </div>
 
              <div id="homepage-image">
                 <div className="homepage-img-container">
-                <img src={financeServicesCover}/>
+                <img src={coverPic}/>
                 </div>
             </div>
          </>

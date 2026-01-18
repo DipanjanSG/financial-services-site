@@ -8,8 +8,10 @@ import KnowMoreButton from '../../Components/Buttons/KnowMoreButton/KnowMoreButt
 import OnlyTextCover from '../../Components/CoverSections/OnlyTextCover/OnlyTextCover';
 import coverPic from '../../assets/ask-us-anything-cover.png';
 import experienceCoverPic from "../../assets/experience-cover.png";
-import TripleTextSection from '../../Components/TripleTextSection/TripleTextSection';
-
+import TripleTextSection from '../../Components/TripleTextSection/TripleTextSection'; 
+import Experience from '../../Components/Experience/Experience';
+import SingleTilePicRound from '../../Components/SingleTilePicRound/SingleTilePicRound';
+import KnowMoreButtonRound from '../../Components/Buttons/KnowMoreButtonRound/KnowMoreButtonRound';
 
 
 
@@ -24,8 +26,11 @@ export default function UniqueService()
                      };
     const knowMoreSection = {
         isSectionVisible : true,
-        component: KnowMoreButton
+        component: KnowMoreButtonRound
     };
+
+
+    const singleTileType = SingleTilePicRound;
 
     var faculty1= new Faculty("" , "Constant Feedback", [], "Our faculty is a group of highly experienced educators and professionals who care about your learning journey. They combine deep subject knowle", "" ,[], "",[], [],"/assets/visual-learning-card.png");
     var faculty2= new Faculty("" , "Personalization", [], "I never imagined learning could be this enjoyable and impactful. This institute transformed the way I think, study, and apply knowledge.", "" , [],"",[], [],"/assets/cooperative-learning.png");
@@ -41,19 +46,26 @@ export default function UniqueService()
 
     const coverText = ["200+ Clients",  "Managing over 2cr", "Avg Return 60%"];
 
+    const largeText = ["Constant Feedback", "&" , "Customized services are our strengths"]
 
     return(
         <section>
             <OnlyTextCover coverText={"We are Different"} coverPic={coverPic}/>
-            <HorizontalSectionWithPic picOnLeft={true} pic={topPic} heading={"Our sincerity lies in giving you the best value for money"} text={""}/>
-             <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
-               <TileContainer facultyList={facultyListTop}/>
-            </TileContainerContext.Provider>
-            <Experience coverPic={experienceCoverPic}/>
-              <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
-               <TileContainer facultyList={facultyListBottom}/>
-            </TileContainerContext.Provider>
+
             <TripleTextSection coverText={coverText}/>
+            <Experience coverPic={experienceCoverPic} largeText={largeText}/>
+
+             <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
+               <TileContainer facultyList={facultyListTop} singleTileType={singleTileType}/>
+            </TileContainerContext.Provider>
+            
+            <HorizontalSectionWithPic picOnLeft={true} pic={topPic} heading={"One of a kind"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>
+
+              <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
+               <TileContainer facultyList={facultyListBottom} singleTileType={singleTileType}/>
+            </TileContainerContext.Provider>
+            
+            
 
         </section>
     );

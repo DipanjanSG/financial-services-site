@@ -13,12 +13,23 @@ function Header()
         <header id = "footer" className="ms-financial-edu-website-header">
             <section  className="header-flex" >  
 
+
                 <section>
-                    <Link to="/about-us" className="header-links">About</Link>
+                    <Link to="/" className="header-links">Home</Link>
+                </section>
+                <section>
+                    <Link to="/services" className="header-links">Our Services</Link>
+                </section>
+                <section>
+                    <Link to="/about-us" className="header-links">About Us</Link>
+                </section>
+
+                 <section>
+                    <Link to="/our-team" className="header-links">Our Experience</Link>
                 </section>
 
                 <section>
-                    <Link to="/success-story" className="header-links">Client Stories</Link>
+                    <Link to="/success-story" className="header-links">Satisfied Customers</Link>
                 </section>
 
                 <section>

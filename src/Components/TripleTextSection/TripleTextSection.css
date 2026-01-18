@@ -7,6 +7,7 @@
     overflow:hidden;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -56,9 +57,9 @@
 
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(0, 0, 0, 0.6) 50%,
-        rgba(0, 0, 0, 0.8) 100%
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 1) 100%
     );
 
     z-index: 1;
@@ -69,7 +70,11 @@
 .triple-text-pic-container span
 {
     z-index: 999;
-    position: absolute;
+     position: absolute;
+    top:40%;
+    left:50%; 
+    transform: translate(-50%, -50%);
+    color: var( --app-font-color-black);
 
 }
 

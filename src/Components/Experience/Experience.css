@@ -1,12 +1,41 @@
+.experience-heading-container
+{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    background-image:linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  ),
+   url("../../assets/experience-cover.png");
+   padding: 2vh 0;
+
+}
+
+
 .experience-heading {
   width: 98vw;
-  height: 100vh;
+  height: auto;
   max-width: 98vw;
-  max-height: 100vh;
+  max-height: auto;
   text-align: center;
   color: var(--app-heading-color-primary);
   font-family: "Source Serif 4", serif;
   font-weight: 300;
   font-size: 18vh;
-  padding: 2% 0;
+  padding: 0 0;
+  
+  
 }
+
+
+.experience-link
+{
+  min-width: 70%;
+  max-width: 100%;
+}
+

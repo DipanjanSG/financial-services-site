@@ -16,13 +16,13 @@ export default function TripleTextSection({coverText})
             </section>
 
             <section className="triple-text-pic-container">
-                <img src={financeStudentBlack2} className='triple-text-cover-img'/>
+                <img src={financeStudentBlack} className='triple-text-cover-img'/>
                 <span>{coverText[1]}</span>
             </section>
 
 
             <section className="triple-text-pic-container">
-                <img src={financeStudentBlack3} className='triple-text-cover-img'/>
+                <img src={financeStudentBlack} className='triple-text-cover-img'/>
                 <span>{coverText[2]}</span>
             </section>
         </section>

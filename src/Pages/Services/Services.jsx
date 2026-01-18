@@ -11,8 +11,11 @@ import EmailUs from '../../assets/email-us.png';
 import MailUs from '../../assets/mail-us.png';
 import GetOurLocation from '../../assets/get-our-location.jpg';
 import coverPic from '../../assets/ask-us-anything-cover.png';
+import TradingPic from '../../assets/trading-pic.png';
 import whatsAppLogo from '../../assets/whatsapp-logo.png';
 import AskAQuestion from '../../Components/AskAQuestion/AskAQuestion';
+import DualTilesUnequal from '../../Components/DualTilesUnequal/DualTilesUnequal';
+import Investing from '../../assets/capital-markets.png'
 
 
 export default function Services()
@@ -22,7 +25,7 @@ export default function Services()
     var faculty2= new Faculty("" , "Sayani Das", [], "I never imagined learning could be this enjoyable and impactful. This institute transformed the way I think, study, and apply knowledge.", "x" , [],"",[], [],"/assets/student5.png");
     var faculty3= new Faculty("" , "Pallab Ghosh", [], "This course helped me understand concepts that always felt complicated before. The lessons were clear, practical, and easy to follow.",  "x" ,[], "",[], [],"/assets/student6.png");
     const [rowOnePics , setRowOnePics] = useState([EmailUs,MailUs,GetOurLocation]);
-    const [rowTwoPics , setRowTwoPics] = useState([whatsAppUs,CallUs]);
+    const [rowTwoPics , setRowTwoPics] = useState([Investing,TradingPic]);
 
     const[showPopUp, setShowPopUp] = useState(false);
 
@@ -78,25 +81,11 @@ export default function Services()
 
     return(
         <section>
-            <OnlyTextCover coverText={"Drop us a note"} coverPic={coverPic}/>
+            <OnlyTextCover coverText={"Our Services"} coverPic={coverPic}/>
 
-            {/* <p className='quick-contact'> Drop a note or Pay us a visit </p>   */}
-            
-
-            <section className='tile-container'>
-            <TripleTiles careerLeftTile={"E-mail"} careerMiddleTile={"Mail"} careerRightTile={"Office Location"} pics={rowOnePics} handleTileClick={handleTileClick} isLink={false}></TripleTiles>
-            </section>
-
-
-            {/* <p className='quick-contact'>Have a quick Quick chat</p>   */}
-            
-            
+           <section className='tile-container'></section>
+                <DualTilesUnequal careerLeftTile={"Investing"} careerRightTile={"Trading"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={false}></DualTilesUnequal>
             <section className='tile-container'></section>
-                <DualTiles careerLeftTile={"WhatsApp"} careerRightTile={"Call"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={false}></DualTiles>
-            <section className='tile-container'></section>
-           
-           {/* <DualTiles careerLeftTile={"Govt Jobs (SEBI, RBI, EXCHANGES)"} careerRightTile={"Accounts & Tax"} pics={rowTwoPics}></DualTiles> */}
-            {showPopUp === true && <PopUpExtraInfo setShowPopUp={setShowPopUp} extraInfo={additionalInfo}/>}
         </section>
     );
 }

@@ -21,6 +21,7 @@ import FullPageCover from '../../Components/CoverSections/FullPageCover/FullPage
 import Experience from '../../Components/Experience/Experience';
 import marketInsightsPic from  '../../assets/market-insights.jpg';
 
+
 // export const facultyCardContext = createContext();
 
 function HomePage() {
@@ -43,6 +44,9 @@ function HomePage() {
     };
 
     const singleTileType = SingleTilePicRound;
+   const coverText = ["Meet", "Our","Founder"];
+   const linkText = "Our Services";
+   const largeText = ["25 years", "of wealth management", "experience"] ;
 
       
        const courseDetails = {
@@ -96,7 +100,7 @@ function HomePage() {
 
 
       <div>
-         <FullPageCover/>
+         <FullPageCover  coverPic={financeServicesCover} coverText={coverText} linkText={linkText}/>
 
          <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
             <TileContainer facultyList={facultyList} singleTileType={singleTileType}/>
@@ -104,8 +108,8 @@ function HomePage() {
 
          <MarketInsights courseDetails={courseDetails} knowMoreSection={knowMoreSection}/>
 
-         <Experience/>
-         <HorizontalSectionWithPic knowMoreLink="/our-values" picOnLeft={false} pic={weAreUnique} heading={"We are different"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>
+         <Experience largeText={largeText} knowMoreLink={"/our-team"}/>
+         <HorizontalSectionWithPic knowMoreLink="/unique-service" picOnLeft={false} pic={weAreUnique} heading={"We are different"} text={"We act with honesty and fairness in everything we do.Trust is the foundation of our relationships with clients, partners, and each other."}/>
 
          
       </div>

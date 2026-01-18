@@ -1,0 +1,45 @@
+.single-vertical-section-with-pic-old
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .1vw;
+    /* background-color: #FFF; */
+    background-image:linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),
+   url("../../assets/experience-cover.png");
+
+    color: var(--app-font-color-white);
+    margin-top: 20vh 0; 
+    /* padding: 5vh; */
+    width: 45%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    align-items: flex-start;
+    border-radius: 20px;
+    text-align: right;
+   
+}
+
+.single-vertical-section-with-pic-old > *
+{
+    flex:1;
+    width: 95%;
+    padding: 0% 2%;
+
+}
+
+
+.text-sub-section
+{
+
+    margin-top: 0%;
+} 
