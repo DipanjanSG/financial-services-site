@@ -72,11 +72,27 @@ export default function ArticleText()
             real writing is published. The final article will explore key ideas, present 
             structured arguments, and guide the reader through insights with clarity and 
              <br/>
-            <img src="https://www.visualcapitalist.com/wp-content/uploads/2022/02/Visualizing-Chinas-Economy-By-Sector-in-2021-Shareable-400x240.jpg"/>
+            <img className="float-image-left" src="https://www.visualcapitalist.com/wp-content/uploads/2022/02/Visualizing-Chinas-Economy-By-Sector-in-2021-Shareable-400x240.jpg"/>
             
             <br/>
 
             purpose. Typography, spacing, and layout are shown here for preview only. This 
+            is a placeholder article used to demonstrate how content will appear once 
+            real writing is published. The final article will explore key ideas, present 
+            structured arguments, and guide the reader through insights with clarity and 
+            purpose. Typography, spacing, and layout are shown here for preview only.
+
+            purpose. Typography, spacing, and layout are shown here for preview only. This 
+            is a placeholder article used to demonstrate how content will appear once 
+            real writing is published. The final article will explore key ideas, present 
+            structured arguments, and guide the reader through insights with clarity and 
+            purpose. Typography, spacing, and layout are shown here for preview only.
+             purpose. Typography, spacing, and layout are shown here for preview only. This 
+            is a placeholder article used to demonstrate how content will appear once 
+            real writing is published. The final article will explore key ideas, present 
+            structured arguments, and guide the reader through insights with clarity and 
+            purpose. Typography, spacing, and layout are shown here for preview only.
+             purpose. Typography, spacing, and layout are shown here for preview only. This 
             is a placeholder article used to demonstrate how content will appear once 
             real writing is published. The final article will explore key ideas, present 
             structured arguments, and guide the reader through insights with clarity and 

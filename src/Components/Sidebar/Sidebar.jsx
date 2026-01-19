@@ -18,32 +18,38 @@ export default function Sidebar({monthlyArticlesList})
     return(
      
         <section className="article-page-side-bar">
+            {/* <section className='side-bar-month-list-container'> */}
             {
+
+                 
             monthlyArticlesList.map((item, index)=> 
                  {
                     return (
-                        <section className="article-page-side-bar-month-list">
-                            
-                            
-                            <section className="article-page-side-bar-month"><p>&#128467;</p><p>{item.month}</p>
-                                {isMonthNavigationOpen ? <p onClick={toggleArrow}>&#9660;</p>: <p onClick={toggleArrow}>&#9654;</p>}
-                            </section>
-
-
-                            {
-                             isMonthNavigationOpen &&
-                            
-                                item.monthlyArticle.map((item,index)=>
-                                {
-                                    return (<SidebarMainItem data={item.title}/>)
-                                })
-                            } 
                        
-                        </section>
+                            <section className="article-page-side-bar-month-list">
+                                
+                                
+                                <section className="article-page-side-bar-month"><p>&#128467;</p><p>{item.month}</p>
+                                    {isMonthNavigationOpen ? <p onClick={toggleArrow}>&#9660;</p>: <p onClick={toggleArrow}>&#9654;</p>}
+                                </section>
+
+
+                                {
+                                isMonthNavigationOpen &&
+                                
+                                    item.monthlyArticle.map((item,index)=>
+                                    {
+                                        return (<SidebarMainItem data={item.title}/>)
+                                    })
+                                }  
+                        
+                            </section>
+                        
                            )
                  })
 
             }
+            {/* </section> */}
         </section>
         
     );

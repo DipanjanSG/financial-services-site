@@ -1,3 +1,20 @@
+
+
+.float-text-right
+{
+
+    float: right;
+}
+
+
+.float-image-left
+{
+
+    float: left;
+}
+
+
+
 .article-main-text
 {
 
@@ -15,5 +32,7 @@
 {
 
    border-right: var(--app-bg-color-secondary) 6px solid;
+   margin: 0 3% 3% 0%;
+
    padding : 5%;
 }

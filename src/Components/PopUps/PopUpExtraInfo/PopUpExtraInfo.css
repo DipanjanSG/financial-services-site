@@ -20,8 +20,8 @@ left: 0;
     left: 50%;
     backdrop-filter: blur(4px);
     transform: translate(-50%, -50%);
-    z-index : 1001;
-    width: 70%;
+    z-index : 1004;
+    width: 80%;
     height: 90%;
     background: var(--app-bg-color);
     color : white;
@@ -74,6 +74,8 @@ transform: scale(0.9);
 
 .text-section
 {
-padding: 4% 4%;
-
+    padding: 4% 4%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

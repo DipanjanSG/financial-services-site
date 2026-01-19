@@ -41,13 +41,13 @@ export default function ContactUs()
 
     const additionalInfos = [
         {  
-           heading: "WhatsApp us",
+           heading: "WhatsApp",
            body: (<><p style={{textAlign: "center"}}>Click below button to start WhatsApp chat</p><a href="https://wa.me/919163509785?text=Hi
 " target="_blank" rel="noopener nonreferrer"><img src={whatsAppLogo} style={{display: "block", margin: "auto auto" , width:"25%" , height: "auto"}} ></img></a></>)
         },
 
         {  
-           heading: "Call us",
+           heading: "Call",
            body: (<><p style={{textAlign: "center", fontSize:"5vh"}}>Kolkata : +91 88888 55555 <br></br> Bengaluru : +91 77777 44444 
                           <br></br>   Hyderabad : +91 77777 44444  <br></br> Lucknow : +91 77777 44444
                   </p></>)
@@ -56,13 +56,13 @@ export default function ContactUs()
 
         
         {  
-           heading: "E-mail us",
+           heading: "E-mail",
            body: (<><AskAQuestion/></>)
         },
 
 
         {  
-           heading: "Drop us a letter",
+           heading: "Mail",
            body:  (<><p style={{textAlign: "center", fontSize:"5vh"}}>MAHASAMVIT INT. LIMITED<br></br>20/2, 2ND FLOOR, 
            3RD CROSS, 14TH MAIN ROAD,
                           <br></br>E BLOCK, SAHAKAR NAGAR<br></br>BENGALURU, KARNATAKA 560092<br></br>India
@@ -70,7 +70,7 @@ export default function ContactUs()
         },
          
 {
-  heading: "Location on Map",
+  heading: "Office Location",
   body: (
     <><section style={{ 
         height: "42vh"

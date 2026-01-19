@@ -4,7 +4,7 @@ export default function ArticleHighlights()
 {
 
     return(
-       <section  className='article-highlight-container'>
+       <section  className='article-highlight-container float-text-right'>
             <section className='article-highlight'> 
                 The lack of proper 
                 <br/> 

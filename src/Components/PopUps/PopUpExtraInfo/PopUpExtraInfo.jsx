@@ -15,7 +15,6 @@ export default function PopUpExtraInfo({setShowPopUp, extraInfo})
                 <section className='text-section'>
                     <section className="extra-info-header">
                         <h1>{extraInfo.heading}</h1>
-                        <hr></hr>
                     </section>
                    
                     <main className='main-text'>
