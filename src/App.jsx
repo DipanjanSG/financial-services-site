@@ -11,6 +11,7 @@ import UniqueService from './Pages/UniqueService/UniqueService';
 import Header from './Components/Header/Header';
 import Services from './Pages/Services/Services';
 import Article from './Pages/Articles/Articles';
+import IndividualService from './Pages/IndividualService/IndividualService';
 
 
 
@@ -31,6 +32,7 @@ function App() {
          <Route  path = "/about-us" element ={<AboutUs/>} />
          <Route  path = "/services" element ={<Services/>} />
          <Route  path = "/article" element ={<Article/>} />
+         <Route  path = "/service" element ={<IndividualService/>} />
 
 
       </Routes>

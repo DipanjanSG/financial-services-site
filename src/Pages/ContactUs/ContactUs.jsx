@@ -42,13 +42,13 @@ export default function ContactUs()
     const additionalInfos = [
         {  
            heading: "WhatsApp",
-           body: (<><p style={{textAlign: "center"}}>Click below button to start WhatsApp chat</p><a href="https://wa.me/919163509785?text=Hi
-" target="_blank" rel="noopener nonreferrer"><img src={whatsAppLogo} style={{display: "block", margin: "auto auto" , width:"25%" , height: "auto"}} ></img></a></>)
+           body: (<><p style={{textAlign: "center",fontSize:"120%"}}>Click below button to start WhatsApp chat</p><a href="https://wa.me/919163509785?text=Hi
+" target="_blank" rel="noopener nonreferrer"><img src={whatsAppLogo} style={{display: "block", margin: "auto auto" , width:"50%" , height: "auto"}} ></img></a></>)
         },
 
         {  
            heading: "Call",
-           body: (<><p style={{textAlign: "center", fontSize:"5vh"}}>Kolkata : +91 88888 55555 <br></br> Bengaluru : +91 77777 44444 
+           body: (<><p style={{textAlign: "center", fontSize:"150%"}}>Kolkata : +91 88888 55555 <br></br> Bengaluru : +91 77777 44444 
                           <br></br>   Hyderabad : +91 77777 44444  <br></br> Lucknow : +91 77777 44444
                   </p></>)
         
@@ -63,9 +63,9 @@ export default function ContactUs()
 
         {  
            heading: "Mail",
-           body:  (<><p style={{textAlign: "center", fontSize:"5vh"}}>MAHASAMVIT INT. LIMITED<br></br>20/2, 2ND FLOOR, 
-           3RD CROSS, 14TH MAIN ROAD,
-                          <br></br>E BLOCK, SAHAKAR NAGAR<br></br>BENGALURU, KARNATAKA 560092<br></br>India
+           body:  (<><p style={{textAlign: "center", fontSize:"150%"}}>Mahasamvit Int. Ltd<br></br>20/2, 2nd Floor, 
+           3rd Cross, 14th Main Rd,
+                          <br></br>E Block, Sahakar Nagar<br></br>Bengaluru, Karnataka-560092<br></br>India
                   </p></>)
         },
          
@@ -73,7 +73,8 @@ export default function ContactUs()
   heading: "Office Location",
   body: (
     <><section style={{ 
-        height: "42vh"
+        height: "150%",
+        width: "100%",
         }}>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.639092736799!2d77.58949937490729!3d13.05862958726482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae190032da19f9%3A0x79b54cb9ad304ff8!2sMahasamvit%20International%20Limited!5e0!3m2!1sen!2sin!4v1765285092149!5m2!1sen!2sin"

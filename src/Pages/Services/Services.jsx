@@ -84,7 +84,7 @@ export default function Services()
             <OnlyTextCover coverText={"Our Services"} coverPic={coverPic}/>
 
            <section className='tile-container'></section>
-                <DualTilesUnequal careerLeftTile={"Investing"} careerRightTile={"Trading"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={false}></DualTilesUnequal>
+                <DualTilesUnequal careerLeftTile={"Investing"} careerRightTile={"Trading"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={true}></DualTilesUnequal>
             <section className='tile-container'></section>
         </section>
     );
