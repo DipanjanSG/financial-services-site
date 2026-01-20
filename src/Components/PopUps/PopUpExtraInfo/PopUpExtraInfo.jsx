@@ -13,13 +13,14 @@ export default function PopUpExtraInfo({setShowPopUp, extraInfo})
                 <section className='pop-up-close' onClick={()=>setShowPopUp(false)}>&#10006;
                 </section>
                 <section className='text-section'>
-                    <section className="extra-info-header">
-                        <h1>{extraInfo.heading}</h1>
-                    </section>
+  
+                    <h1 className="extra-info-header">{extraInfo.heading}</h1>
+
                    
                     <main className='main-text'>
                         {extraInfo.body}
-                    </main> 
+                    </main>
+
                 </section>
             </section>
         </section>
