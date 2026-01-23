@@ -4,7 +4,6 @@ import Faculty from '../Models/Faculty';
 import whatsAppUs from "../../assets/whatsapp-us.png";
 import TripleTiles from '../../Components/TripleTiles/TripleTiles';
 import { useState } from 'react';
-import DualTiles from '../../Components/DualTiles/DualTiles';
 import PopUpExtraInfo from '../../Components/PopUps/PopUpExtraInfo/PopUpExtraInfo';
 import CallUs from '../../assets/call-us.jpg';
 import EmailUs from '../../assets/email-us.png';
@@ -29,7 +28,7 @@ export default function Services()
 
     const[showPopUp, setShowPopUp] = useState(false);
 
-    
+    const links = ["/service","/service"];
     const facultyList = [faculty1, faculty2, faculty3];
     
     const cssValues = {
@@ -84,7 +83,7 @@ export default function Services()
             <OnlyTextCover coverText={"Our Services"} coverPic={coverPic}/>
 
            <section className='tile-container'></section>
-                <DualTilesUnequal careerLeftTile={"Investing"} careerRightTile={"Trading"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={true}></DualTilesUnequal>
+                <DualTilesUnequal careerLeftTile={"Investing"} careerRightTile={"Trading"} pics={rowTwoPics} handleTileClick={handleTileClick} isLink={true} links={links}></DualTilesUnequal>
             <section className='tile-container'></section>
         </section>
     );

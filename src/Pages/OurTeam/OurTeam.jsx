@@ -30,7 +30,7 @@ export default function OurTeam() {
 
    const [rowOnePics , setRowOnePics] = useState([bankingAndInsurance,legalFinance,capitalMarkets]);
 
-   const [cardDetails , setCardDetails]= useState([new Card("Berkley",bankingAndInsurance), 
+   const [cardDetails , setCardDetails]= useState([new Card("Barclays",bankingAndInsurance), 
                                                  new Card("Bombay Stock Exchange",legalFinance),
                                                  new Card("IIFL",capitalMarkets)
                                                 ]);

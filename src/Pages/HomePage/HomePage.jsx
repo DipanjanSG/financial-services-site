@@ -26,9 +26,9 @@ import marketInsightsPic from  '../../assets/market-insights.jpg';
 
 function HomePage() {
 
-   var faculty1= new Faculty("" , "Wealth Building", [], "Our faculty is a group of highly experienced educators and professionals who care about your learning journey. They combine deep subject knowle", "" ,[], "",[], [],"/assets/wealth-building.png","/faculty");///assets/wealth-building.png
-   var faculty2= new Faculty("" , "Trading Services", [], "I never imagined learning could be this enjoyable and impactful. This institute transformed the way I think, study, and apply knowledge.", "" , [],"",[], [],"/assets/trading-service.png","/success-story");//
-   var faculty3= new Faculty("" , "Mutual Funds Investing", [], "Start earning from day one while building your career foundation. Learn practical skills and put them to work immediately.",  "" ,[], "",[], [],"/assets/mutual-funds.png","/earn-while-learning");
+   var faculty1= new Faculty("" , "Wealth Building", [], "Our faculty is a group of highly experienced educators and professionals who care about your learning journey. They combine deep subject knowle", "" ,[], "",[], [],"/assets/wealth-building.png","/service");///assets/wealth-building.png
+   var faculty2= new Faculty("" , "Trading Services", [], "I never imagined learning could be this enjoyable and impactful. This institute transformed the way I think, study, and apply knowledge.", "" , [],"",[], [],"/assets/trading-service.png","/service");//
+   var faculty3= new Faculty("" , "Mutual Funds Investing", [], "Start earning from day one while building your career foundation. Learn practical skills and put them to work immediately.",  "" ,[], "",[], [],"/assets/mutual-funds.png","/service");
    
    const facultyList = [faculty1, faculty2, faculty3];
    const cssValues = {
@@ -57,25 +57,30 @@ function HomePage() {
                   title: "Market Insights",
                   name: "December 2025 , Insights",
                   image: marketInsightsPic,
+                  link:"/article",
    
                   subModules: [
                      
                     {
                        name: "November 2025 , Insights",
                        details: "p",
+                       link:"/article"
                     },
                       
                     {
                        name: "September 2025 , Insights",
-                       details: "p"
+                       details: "p",
+                       link:"/article"
                     },
                     {
                        name: "October 2025 Insights",
-                       details: "p"
+                       details: "p",
+                       link:"/article"
                     },
                     {
                        name: "September 2025 , Insights",
-                       details: "p"
+                       details: "p",
+                       link:"/article"
                     }
                   ]
                    }
@@ -100,7 +105,7 @@ function HomePage() {
 
 
       <div>
-         <FullPageCover  coverPic={financeServicesCover} coverText={coverText} linkText={linkText}/>
+         <FullPageCover  coverPic={financeServicesCover} coverText={coverText} linkText={linkText} link={"/services"}/>
 
          <TileContainerContext.Provider value={{cssValues,knowMoreSection}}>
             <TileContainer facultyList={facultyList} singleTileType={singleTileType}/>

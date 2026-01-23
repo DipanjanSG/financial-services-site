@@ -12,7 +12,7 @@ import TripleTextSection from '../../Components/TripleTextSection/TripleTextSect
 import Experience from '../../Components/Experience/Experience';
 import SingleTilePicRound from '../../Components/SingleTilePicRound/SingleTilePicRound';
 import KnowMoreButtonRound from '../../Components/Buttons/KnowMoreButtonRound/KnowMoreButtonRound';
-
+import KnowMoreButtonRoundPopUp from '../../Components/Buttons/KnowMoreButtonRoundPopUp/KnowMoreButtonRoundPopUp';
 
 
 
@@ -26,7 +26,7 @@ export default function UniqueService()
                      };
     const knowMoreSection = {
         isSectionVisible : true,
-        component: KnowMoreButtonRound
+        component: KnowMoreButtonRoundPopUp
     };
 
 

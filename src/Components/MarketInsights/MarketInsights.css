@@ -93,7 +93,8 @@
     flex-direction: row;
     max-width: 100%;
     overflow: hidden;
-    /* align-items: center; */
+    justify-content:flex-end;
+    gap: 5%;
 
 }
 
@@ -175,4 +176,11 @@ flex-direction: column;
 .insights-read-more
 {
      text-align:right;
+     color: var(--app-font-color-black);
+}
+
+
+.insights-read-more:hover
+{
+     color: var(--app-font-color-black);
 }

@@ -1,7 +1,7 @@
 import mahasamvitLogo from "../../../assets/mahasamvit-logo.png";
 import { Link } from "react-router-dom";
 
-export default function FullPageCover({coverPic, coverText, linkText})
+export default function FullPageCover({coverPic, coverText, linkText , link=""})
 {
 
     return (
@@ -23,7 +23,7 @@ export default function FullPageCover({coverPic, coverText, linkText})
                         <span id="homepage-links"> 
                         <span>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <Link to="/course-categories"><span className="shrink-underline-white">{linkText}</span></Link> </span> 
+                            <Link to={link}><span className="shrink-underline-white">{linkText}</span></Link> </span> 
                     </span>}
                     
                 </section>

@@ -74,9 +74,9 @@ function Footer()
             <section>
                 <h2>Quick Links</h2>
                 
-                    {/* <span> <Link to="/about-us" className="header-links">What we Do</Link></span><br></br> */}
-                   <span><Link to="/about-us" className="header-links">Contact Us</Link></span><br></br>
-                    <span><Link to="/about-us" className="header-links">Client Testimonials</Link></span>
+                   <span> <Link to="/about-us" className="header-links">What we Do</Link></span><br></br>
+                   <span><Link to="/contact-us" className="header-links">Contact Us</Link></span><br></br>
+                    <span><Link to="/success-story" className="header-links">Client Testimonials</Link></span>
                 
             </section>
            
