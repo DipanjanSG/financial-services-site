@@ -9,7 +9,7 @@ import CallUs from '../../assets/call-us.jpg';
 import EmailUs from '../../assets/email-us.png';
 import MailUs from '../../assets/mail-us.png';
 import GetOurLocation from '../../assets/get-our-location.jpg';
-import coverPic from '../../assets/ask-us-anything-cover.png';
+import coverPic from '../../assets/all-service-cover-pic.jpg';
 import TradingPic from '../../assets/trading-pic.png';
 import whatsAppLogo from '../../assets/whatsapp-logo.png';
 import AskAQuestion from '../../Components/AskAQuestion/AskAQuestion';

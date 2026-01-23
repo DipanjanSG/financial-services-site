@@ -5,6 +5,8 @@ import VertialSectionOld from '../../Components/VertialSectionOld/VertialSection
 import TilesWithOrgNames from '../../Components/TilesWithOrgNames/TilesWithOrgNames';
 import founder from '../../assets/founder.png';
 import bankingAndInsurance from "../../assets/banking-and-insurance.png";
+import barclaysLogo from "../../assets/barclays-logo.png";
+import bsePic from "../../assets/bse-pic.png";
 import legalFinance from "../../assets/legal-finance.png";
 import capitalMarkets from "../../assets/capital-markets.png";
 import coverPic from '../../assets/our-team-cover-pic.png';
@@ -14,6 +16,7 @@ import FullPageCover from '../../Components/CoverSections/FullPageCover/FullPage
 import TripleTilesUnequal from '../../Components/TripleTilesUnequal/TripleTilesUnequal';
 import { motion } from "framer-motion";
 import earnWhileLearning from '../../assets/earn-while-learning.png';
+
 
 // import CompanyAndRoles from "../../Components/CompanyAndRoles/CompanyAndRoles";
 
@@ -28,18 +31,18 @@ export default function OurTeam() {
   { title: "Student of the year 1992", description: "Calcutta University" }
 ];
 
-   const [rowOnePics , setRowOnePics] = useState([bankingAndInsurance,legalFinance,capitalMarkets]);
+   const [rowOnePics , setRowOnePics] = useState([bsePic,bsePic,bsePic]);
 
-   const [cardDetails , setCardDetails]= useState([new Card("Barclays",bankingAndInsurance), 
-                                                 new Card("Bombay Stock Exchange",legalFinance),
-                                                 new Card("IIFL",capitalMarkets)
+   const [cardDetails , setCardDetails]= useState([new Card("Barclays",barclaysLogo), 
+                                                 new Card("Bombay Stock Exchange",barclaysLogo),
+                                                 new Card("IIFL",barclaysLogo)
                                                 ]);
 
 
   
-   const [cardDetailsRow2 , setCardDetailsRow2]= useState([new Card("Chola Mangalam Finance",bankingAndInsurance), 
-                                                 new Card("Goldman Sachs",legalFinance),
-                                                 new Card("JP Morgan",capitalMarkets)
+   const [cardDetailsRow2 , setCardDetailsRow2]= useState([new Card("Chola Mangalam Finance",barclaysLogo), 
+                                                 new Card("Goldman Sachs",barclaysLogo),
+                                                 new Card("JP Morgan",barclaysLogo)
                                                 ]);
    const handleTileClick = (e)=>
     {

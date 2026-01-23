@@ -7,13 +7,13 @@ import founder from '../../assets/founder.png';
 import bankingAndInsurance from "../../assets/banking-and-insurance.png";
 import legalFinance from "../../assets/legal-finance.png";
 import capitalMarkets from "../../assets/capital-markets.png";
-import coverPic from '../../assets/trading.jpg';
+import coverPic from '../../assets/services-cover-pic.jpg';
 import { useState } from "react";
 import Card from "../Models/Card.js";
 import FullPageCover from '../../Components/CoverSections/FullPageCover/FullPageCover.jsx';
 import TripleTilesUnequal from '../../Components/TripleTilesUnequal/TripleTilesUnequal.jsx';
 import { motion } from "framer-motion";
-import earnWhileLearning from '../../assets/earn-while-learning.png';
+import transparency from '../../assets/transparency.jpg';
 
 // import CompanyAndRoles from "../../Components/CompanyAndRoles/CompanyAndRoles";
 
@@ -30,16 +30,16 @@ export default function IndividualService() {
 
    const [rowOnePics , setRowOnePics] = useState([bankingAndInsurance,legalFinance,capitalMarkets]);
 
-   const [cardDetails , setCardDetails]= useState([new Card("Constant Feedback",bankingAndInsurance), 
-                                                 new Card("Integrity",legalFinance),
-                                                 new Card("Honesty",capitalMarkets)
+   const [cardDetails , setCardDetails]= useState([new Card("Constant Feedback",transparency), 
+                                                 new Card("Integrity",transparency),
+                                                 new Card("Honesty",transparency)
                                                 ]);
 
 
   
-   const [cardDetailsRow2 , setCardDetailsRow2]= useState([new Card("Profit Maximization",bankingAndInsurance), 
-                                                 new Card("Risk Minimization",legalFinance),
-                                                 new Card("Daily Communication",capitalMarkets)
+   const [cardDetailsRow2 , setCardDetailsRow2]= useState([new Card("Profit Maximization",transparency), 
+                                                 new Card("Risk Minimization",transparency),
+                                                 new Card("Daily Communication",transparency)
                                                 ]);
    const handleTileClick = (e)=>
     {
